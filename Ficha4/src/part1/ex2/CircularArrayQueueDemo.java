@@ -1,4 +1,4 @@
-package Ficha4.src.ex2;
+package Ficha4.src.part1.ex2;
 
 import Ficha4.src.Exceptions.EmptyCollectionException;
 

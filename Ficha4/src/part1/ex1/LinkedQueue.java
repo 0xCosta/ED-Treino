@@ -1,4 +1,4 @@
-package Ficha4.src.ex1;
+package Ficha4.src.part1.ex1;
 
 import Ficha4.src.LinearNode;
 import Ficha4.src.QueueADT;
