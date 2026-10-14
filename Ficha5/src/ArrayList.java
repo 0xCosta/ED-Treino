@@ -90,7 +90,7 @@ public abstract class ArrayList<T> implements ListADT<T> {
     }
 
     protected void expandCapacity() {
-        T[] temp = (T[]) (new Object[this.list.length + EXPANSION_FACTOR]);
+        T[] temp = (T[]) (new Object[this.list.length * 2]);
         System.arraycopy(this.list, 0, temp, 0, this.count);
         this.list = temp;
     }
