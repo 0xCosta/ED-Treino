@@ -1,5 +1,7 @@
 package Ficha5.src;
 
+import Ficha5.src.Exceptions.ElementNotFoundException;
+import Ficha5.src.Exceptions.EmptyCollectionException;
 import java.util.Iterator;
 
 /**
@@ -13,14 +15,14 @@ public interface ListADT<T> extends Iterable<T> {
      *
      * @return o primeiro elemento desta lista
      */
-    public T removeFirst();
+    public T removeFirst() throws EmptyCollectionException;
 
     /**
      * Remove e devolve o último elemento desta lista.
      *
      * @return o último elemento desta lista
      */
-    public T removeLast();
+    public T removeLast() throws EmptyCollectionException;
 
     /**
      * Remove e devolve o elemento especificado desta lista.
@@ -28,21 +30,21 @@ public interface ListADT<T> extends Iterable<T> {
      * @param element o elemento a ser removido da lista
      * @return o elemento removido da lista
      */
-    public T remove(T element);
+    public T remove(T element) throws EmptyCollectionException, ElementNotFoundException;
 
     /**
      * Devolve uma referência para o primeiro elemento desta lista.
      * 
      * @return uma referência para o primeiro elemento desta lista
      */
-    public T first();
+    public T first() throws EmptyCollectionException;
 
     /**
      * Devolve uma referência para o último elemento desta lista.
      * 
      * @return uma referência para o último elemento desta lista
      */
-    public T last();
+    public T last() throws EmptyCollectionException;
 
     /**
      * Devolve true se esta lista contiver o elemento especificado.
