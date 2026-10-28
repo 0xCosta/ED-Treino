@@ -1,7 +1,8 @@
 package Ficha5.src;
 
-import Ficha5.src.Exceptions.ElementNotFoundException;
-import Ficha5.src.Exceptions.EmptyCollectionException;
+import ADTs.ListADT;
+import exceptions.ElementNotFoundException;
+import exceptions.EmptyCollectionException;
 
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;

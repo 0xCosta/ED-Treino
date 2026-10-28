@@ -1,9 +1,9 @@
 package Ficha4.src.part2.ex4;
 
-import Ficha3.src.StackADT;
+import ADTs.StackADT;
 import Ficha3.src.ex1.ArrayStack;
-import Ficha4.src.QueueADT;
-import Ficha4.src.Exceptions.EmptyCollectionException;
+import ADTs.QueueADT;
+import exceptions.EmptyCollectionException;
 
 /**
  * Implementação de uma Queue (FIFO) com recurso a duas Stacks (LIFO).
@@ -37,7 +37,7 @@ public class QueueWithTwoStacks<T> implements QueueADT<T> {
 
         try {
             return this.stackOut.pop();
-        } catch (Ficha3.src.Exceptions.EmptyCollectionException e) {
+        } catch (EmptyCollectionException e) {
             throw new EmptyCollectionException("A Queue está vazia!");
         }
     }
@@ -52,7 +52,7 @@ public class QueueWithTwoStacks<T> implements QueueADT<T> {
 
         try {
             return this.stackOut.peek();
-        } catch (Ficha3.src.Exceptions.EmptyCollectionException e) {
+        } catch (EmptyCollectionException e) {
             throw new EmptyCollectionException("A Queue está vazia!");
         }
     }
@@ -66,7 +66,7 @@ public class QueueWithTwoStacks<T> implements QueueADT<T> {
             while (!this.stackIn.isEmpty()) {
                 try {
                     this.stackOut.push(this.stackIn.pop());
-                } catch (Ficha3.src.Exceptions.EmptyCollectionException e) {
+                } catch (EmptyCollectionException e) {
                     break;
                 }
             }

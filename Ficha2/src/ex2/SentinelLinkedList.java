@@ -1,5 +1,5 @@
 package Ficha2.src.ex2;
-import Ficha2.src.ex1.LinearNode;
+import nodes.LinearNode;
 
 public class SentinelLinkedList<T> {
     private LinearNode<T> head;

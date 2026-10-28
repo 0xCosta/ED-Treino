@@ -1,7 +1,7 @@
 package Ficha4.src.part2.ex3;
 
-import Ficha4.src.Exceptions.EmptyCollectionException;
-import Ficha4.src.QueueADT;
+import exceptions.EmptyCollectionException;
+import ADTs.QueueADT;
 import Ficha4.src.part1.ex1.LinkedQueue;
 
 public class MergeSortedQueues {

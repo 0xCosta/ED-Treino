@@ -1,7 +1,7 @@
 package Ficha3.src.ex1;
 
-import Ficha3.src.StackADT;
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import ADTs.StackADT;
+import exceptions.EmptyCollectionException;
 
 public class ArrayStack<T> implements StackADT<T> {
     private T[] stack;

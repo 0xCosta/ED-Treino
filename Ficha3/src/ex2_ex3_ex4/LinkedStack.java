@@ -1,8 +1,8 @@
 package Ficha3.src.ex2_ex3_ex4;
 
-import Ficha3.src.LinearNode;
-import Ficha3.src.StackADT;
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import nodes.LinearNode;
+import ADTs.StackADT;
+import exceptions.EmptyCollectionException;
 
 public class LinkedStack<T> implements StackADT<T> {
     private LinearNode<T> head;

@@ -1,6 +1,6 @@
 package Ficha5.src.part2.ex3;
 
-import Ficha5.src.UnorderedListADT;
+import ADTs.UnorderedListADT;
 import Ficha5.src.part1.ex2.DoubleLinkedOrderedList;
 
 /**

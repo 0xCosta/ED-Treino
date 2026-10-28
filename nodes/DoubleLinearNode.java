@@ -1,17 +1,31 @@
-package Ficha2.src.ex4;
+package nodes;
 
+/**
+ * Representa um nó (node) numa estrutura duplamente ligada.
+ *
+ * @param <T> o tipo do elemento guardado no nó
+ */
 public class DoubleLinearNode<T> {
+
     private DoubleLinearNode<T> next;
     private DoubleLinearNode<T> previous;
     private T element;
 
-    public DoubleLinearNode(){
+    /**
+     * Cria um node vazio.
+     */
+    public DoubleLinearNode() {
         this.next = null;
         this.previous = null;
         this.element = null;
     }
 
-     public DoubleLinearNode(T element) {
+    /**
+     * Cria um node que armazena o elemento especificado.
+     *
+     * @param element elemento a ser armazenado
+     */
+    public DoubleLinearNode(T element) {
         this.element = element;
         this.next = null;
         this.previous = null;
@@ -41,3 +55,4 @@ public class DoubleLinearNode<T> {
         this.element = element;
     }
 }
+

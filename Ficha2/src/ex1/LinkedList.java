@@ -1,5 +1,7 @@
 package Ficha2.src.ex1;
 
+import nodes.LinearNode;
+
 public class LinkedList<T> {
     private LinearNode<T> head;
 

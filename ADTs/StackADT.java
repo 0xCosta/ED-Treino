@@ -1,6 +1,6 @@
-package Ficha3.src;
+package ADTs;
 
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 
 /**
  * Interface que define o Tipo Abstrato de Dados (ADT) para uma Pilha (Stack).
@@ -21,6 +21,7 @@ public interface StackADT<T> {
      * Remove e devolve o elemento no topo da pilha.
      *
      * @return o elemento removido do topo da pilha
+     * @throws EmptyCollectionException se a pilha estiver vazia
      */
     public T pop() throws EmptyCollectionException;
 
@@ -28,6 +29,7 @@ public interface StackADT<T> {
      * Devolve o elemento no topo da pilha sem o remover.
      *
      * @return o elemento no topo da pilha
+     * @throws EmptyCollectionException se a pilha estiver vazia
      */
     public T peek() throws EmptyCollectionException;
 
@@ -50,5 +52,7 @@ public interface StackADT<T> {
      *
      * @return a representação textual da pilha
      */
+    @Override
     public String toString();
 }
+

@@ -1,6 +1,6 @@
-package Ficha4.src;
+package ADTs;
 
-import Ficha4.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 
 /**
  * Interface que define o Tipo Abstrato de Dados (ADT) para uma Fila (Queue).
@@ -52,5 +52,7 @@ public interface QueueADT<T> {
      *
      * @return a representação textual da fila
      */
+    @Override
     public String toString();
 }
+

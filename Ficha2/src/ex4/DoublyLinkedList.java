@@ -1,5 +1,7 @@
 package Ficha2.src.ex4;
 
+import nodes.DoubleLinearNode;
+
 public class DoublyLinkedList<T> {
    private DoubleLinearNode<T> head;
    private DoubleLinearNode<T> tail;

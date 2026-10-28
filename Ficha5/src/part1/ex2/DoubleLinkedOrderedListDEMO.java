@@ -1,7 +1,7 @@
 package Ficha5.src.part1.ex2;
 
-import Ficha5.src.Exceptions.ElementNotFoundException;
-import Ficha5.src.Exceptions.EmptyCollectionException;
+import exceptions.ElementNotFoundException;
+import exceptions.EmptyCollectionException;
 
 public class DoubleLinkedOrderedListDEMO {
 

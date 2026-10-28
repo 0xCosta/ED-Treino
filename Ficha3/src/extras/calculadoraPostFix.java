@@ -1,6 +1,6 @@
 package Ficha3.src.extras;
 
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 import Ficha3.src.ex1.ArrayStack;
 import Ficha3.src.ex2_ex3_ex4.LinkedStack;
 

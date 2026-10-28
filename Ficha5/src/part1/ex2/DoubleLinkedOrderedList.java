@@ -1,10 +1,10 @@
 package Ficha5.src.part1.ex2;
 
 import Ficha5.src.DoubleLinkedList;
-import Ficha5.src.OrderedListADT;
-import Ficha5.src.UnorderedListADT;
+import ADTs.OrderedListADT;
+import ADTs.UnorderedListADT;
 import Ficha5.src.part1.ex5.DoubleLinkedUnorderedList;
-import Ficha2.src.ex4.DoubleLinearNode;
+import nodes.DoubleLinearNode;
 
 public class DoubleLinkedOrderedList<T> extends DoubleLinkedList<T> implements OrderedListADT<T> {
 

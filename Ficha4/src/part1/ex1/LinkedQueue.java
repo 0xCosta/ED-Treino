@@ -1,8 +1,8 @@
 package Ficha4.src.part1.ex1;
 
-import Ficha4.src.LinearNode;
-import Ficha4.src.QueueADT;
-import Ficha4.src.Exceptions.EmptyCollectionException;
+import nodes.LinearNode;
+import ADTs.QueueADT;
+import exceptions.EmptyCollectionException;
 
 public class LinkedQueue<T> implements QueueADT<T> {
 

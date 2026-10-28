@@ -1,7 +1,7 @@
 package Ficha4.src.part1.ex2;
 
-import Ficha4.src.QueueADT;
-import Ficha4.src.Exceptions.EmptyCollectionException;
+import ADTs.QueueADT;
+import exceptions.EmptyCollectionException;
 
 public class CircularArrayQueue<T> implements QueueADT<T> {
     private T[] queue;

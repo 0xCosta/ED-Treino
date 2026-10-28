@@ -1,6 +1,6 @@
 package Ficha4.src.part1.ex1;
 
-import Ficha4.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 
 public class LinkedQueueDemo {
     public static void main(String[] args) throws EmptyCollectionException {

@@ -1,6 +1,6 @@
 package Ficha3.src.ex2_ex3_ex4;
 
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 
 public class LinkedStackDemo {
     public static void main(String[] args) throws EmptyCollectionException {

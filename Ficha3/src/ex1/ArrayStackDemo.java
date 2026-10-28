@@ -1,6 +1,6 @@
 package Ficha3.src.ex1;
 
-import Ficha3.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 
 public class ArrayStackDemo {
 

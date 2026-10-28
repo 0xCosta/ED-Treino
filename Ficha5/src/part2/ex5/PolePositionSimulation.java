@@ -1,6 +1,6 @@
 package Ficha5.src.part2.ex5;
 
-import Ficha5.src.Exceptions.EmptyCollectionException;
+import exceptions.EmptyCollectionException;
 import Ficha5.src.part1.ex1.ArrayOrderedList;
 import Ficha5.src.part1.ex2.DoubleLinkedOrderedList;
 

@@ -1,5 +1,10 @@
-package Ficha4.src;
+package nodes;
 
+/**
+ * Representa um nó (node) numa estrutura simplesmente ligada.
+ *
+ * @param <T> o tipo do elemento guardado no nó
+ */
 public class LinearNode<T> {
 
     /**
@@ -8,7 +13,7 @@ public class LinearNode<T> {
     private LinearNode<T> next;
 
     /**
-     * Element armazenado neste node.
+     * Elemento armazenado neste node.
      */
     private T element;
 
@@ -21,9 +26,9 @@ public class LinearNode<T> {
     }
 
     /**
-     * Cria um node que armazena o element especificado.
+     * Cria um node que armazena o elemento especificado.
      *
-     * @param element element a ser armazenado
+     * @param element elemento a ser armazenado
      */
     public LinearNode(T element) {
         this.element = element;
@@ -49,21 +54,21 @@ public class LinearNode<T> {
     }
 
     /**
-     * Retorna o element armazenado neste node.
+     * Retorna o elemento armazenado neste node.
      *
-     * @return element armazenado neste node
+     * @return elemento armazenado neste node
      */
     public T getElement() {
         return this.element;
     }
 
     /**
-     * Define o element armazenado neste node.
+     * Define o elemento armazenado neste node.
      *
-     * @param element element a ser armazenado neste node
+     * @param element elemento a ser armazenado neste node
      */
     public void setElement(T element) {
         this.element = element;
     }
-
 }
+

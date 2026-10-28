@@ -1,4 +1,4 @@
-package Ficha5.src;
+package ADTs;
 
 /**
  * Interface que define o Tipo Abstrato de Dados (ADT) para uma Lista Não
@@ -30,3 +30,4 @@ public interface UnorderedListADT<T> extends ListADT<T> {
      */
     public void addAfter(T element, T target);
 }
+

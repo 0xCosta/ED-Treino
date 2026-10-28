@@ -4,9 +4,10 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import Ficha2.src.ex4.DoubleLinearNode;
-import Ficha5.src.Exceptions.ElementNotFoundException;
-import Ficha5.src.Exceptions.EmptyCollectionException;
+import ADTs.ListADT;
+import nodes.DoubleLinearNode;
+import exceptions.ElementNotFoundException;
+import exceptions.EmptyCollectionException;
 
 public abstract class DoubleLinkedList<T> implements ListADT<T> {
     protected DoubleLinearNode<T> front;

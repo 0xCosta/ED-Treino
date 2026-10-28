@@ -1,4 +1,4 @@
-package Ficha5.src.Exceptions;
+package exceptions;
 
 /**
  * Exceção lançada quando se tenta aceder ou remover um elemento que
@@ -7,16 +7,14 @@ package Ficha5.src.Exceptions;
 public class ElementNotFoundException extends Exception {
 
     /**
-     * Cria uma nova instância de <code>ElementNotFoundException</code> com uma
-     * mensagem por omissão.
+     * Cria uma nova instância de ElementNotFoundException com uma mensagem por omissão.
      */
     public ElementNotFoundException() {
         super("O elemento não foi encontrado na coleção.");
     }
 
     /**
-     * Cria uma instância de <code>ElementNotFoundException</code> com a mensagem
-     * especificada.
+     * Cria uma instância de ElementNotFoundException com a mensagem especificada.
      *
      * @param msg a mensagem de detalhe
      */
@@ -24,3 +22,4 @@ public class ElementNotFoundException extends Exception {
         super(msg);
     }
 }
+

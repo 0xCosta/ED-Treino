@@ -1,4 +1,4 @@
-package Ficha5.src;
+package ADTs;
 
 /**
  * Interface que define o Tipo Abstrato de Dados (ADT) para uma Lista Ordenada
@@ -16,3 +16,4 @@ public interface OrderedListADT<T> extends ListADT<T> {
      */
     public void add(T element);
 }
+

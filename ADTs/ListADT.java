@@ -1,7 +1,8 @@
-package Ficha5.src;
+package ADTs;
 
-import Ficha5.src.Exceptions.ElementNotFoundException;
-import Ficha5.src.Exceptions.EmptyCollectionException;
+import exceptions.ElementNotFoundException;
+import exceptions.EmptyCollectionException;
+
 import java.util.Iterator;
 
 /**
@@ -10,10 +11,12 @@ import java.util.Iterator;
  * @param <T> o tipo dos elementos guardados na lista
  */
 public interface ListADT<T> extends Iterable<T> {
+
     /**
      * Remove e devolve o primeiro elemento desta lista.
      *
      * @return o primeiro elemento desta lista
+     * @throws EmptyCollectionException se a lista estiver vazia
      */
     public T removeFirst() throws EmptyCollectionException;
 
@@ -21,6 +24,7 @@ public interface ListADT<T> extends Iterable<T> {
      * Remove e devolve o último elemento desta lista.
      *
      * @return o último elemento desta lista
+     * @throws EmptyCollectionException se a lista estiver vazia
      */
     public T removeLast() throws EmptyCollectionException;
 
@@ -29,6 +33,8 @@ public interface ListADT<T> extends Iterable<T> {
      *
      * @param element o elemento a ser removido da lista
      * @return o elemento removido da lista
+     * @throws EmptyCollectionException se a lista estiver vazia
+     * @throws ElementNotFoundException se o elemento não for encontrado
      */
     public T remove(T element) throws EmptyCollectionException, ElementNotFoundException;
 
@@ -36,6 +42,7 @@ public interface ListADT<T> extends Iterable<T> {
      * Devolve uma referência para o primeiro elemento desta lista.
      * 
      * @return uma referência para o primeiro elemento desta lista
+     * @throws EmptyCollectionException se a lista estiver vazia
      */
     public T first() throws EmptyCollectionException;
 
@@ -43,6 +50,7 @@ public interface ListADT<T> extends Iterable<T> {
      * Devolve uma referência para o último elemento desta lista.
      * 
      * @return uma referência para o último elemento desta lista
+     * @throws EmptyCollectionException se a lista estiver vazia
      */
     public T last() throws EmptyCollectionException;
 
@@ -73,6 +81,7 @@ public interface ListADT<T> extends Iterable<T> {
      *
      * @return um iterador sobre os elementos desta lista
      */
+    @Override
     public Iterator<T> iterator();
 
     /**
@@ -82,5 +91,5 @@ public interface ListADT<T> extends Iterable<T> {
      */
     @Override
     public String toString();
-
 }
+
