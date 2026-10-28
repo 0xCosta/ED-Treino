@@ -2,6 +2,8 @@ package Ficha5.src.part1.ex2;
 
 import Ficha5.src.DoubleLinkedList;
 import Ficha5.src.OrderedListADT;
+import Ficha5.src.UnorderedListADT;
+import Ficha5.src.part1.ex5.DoubleLinkedUnorderedList;
 import Ficha2.src.ex4.DoubleLinearNode;
 
 public class DoubleLinkedOrderedList<T> extends DoubleLinkedList<T> implements OrderedListADT<T> {
@@ -48,7 +50,24 @@ public class DoubleLinkedOrderedList<T> extends DoubleLinkedList<T> implements O
         
         count++;
         modCount++;
-
     }
 
+    /**
+     * Inverte e devolve todos os elementos num Tipo Abstrato de Dados (UnorderedListADT).
+     * Percorre a lista duplamente ligada a partir do final (rear) até ao início (front),
+     * garantindo tempo O(n).
+     *
+     * @return uma lista não ordenada contendo os elementos por ordem invertida
+     */
+    public UnorderedListADT<T> invert() {
+        DoubleLinkedUnorderedList<T> inverted = new DoubleLinkedUnorderedList<>();
+        DoubleLinearNode<T> current = rear;
+
+        while (current != null) {
+            inverted.addToRear(current.getElement());
+            current = current.getPrevious();
+        }
+
+        return inverted;
+    }
 }

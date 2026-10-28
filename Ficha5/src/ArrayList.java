@@ -140,7 +140,7 @@ public abstract class ArrayList<T> implements ListADT<T> {
 
         for (T element : this.list) {
             if (element != null) {
-                s += " -> " + element.toString() + '\n';
+                s += "->" + element.toString() + '\n';
             }
         }
 
