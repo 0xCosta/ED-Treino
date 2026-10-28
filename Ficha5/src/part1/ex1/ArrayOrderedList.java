@@ -1,6 +1,6 @@
 package Ficha5.src.part1.ex1;
 
-import Ficha5.src.ArrayList;
+import lists.ArrayList;
 import exceptions.ElementNotFoundException;
 import exceptions.EmptyCollectionException;
 import ADTs.OrderedListADT;

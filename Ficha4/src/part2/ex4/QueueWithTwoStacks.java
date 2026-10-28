@@ -1,7 +1,7 @@
 package Ficha4.src.part2.ex4;
 
 import ADTs.StackADT;
-import Ficha3.src.ex1.ArrayStack;
+import stack.ArrayStack;
 import ADTs.QueueADT;
 import exceptions.EmptyCollectionException;
 

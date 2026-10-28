@@ -1,6 +1,7 @@
 package Ficha3.src.ex2_ex3_ex4;
 
 import exceptions.EmptyCollectionException;
+import stack.LinkedStack;
 
 public class LinkedStackDemo {
     public static void main(String[] args) throws EmptyCollectionException {

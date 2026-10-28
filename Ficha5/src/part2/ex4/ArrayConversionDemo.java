@@ -1,6 +1,6 @@
 package Ficha5.src.part2.ex4;
 
-import Ficha5.src.part1.ex5.DoubleLinkedUnorderedList;
+import lists.DoubleLinkedUnorderedList;
 
 import java.util.Arrays;
 

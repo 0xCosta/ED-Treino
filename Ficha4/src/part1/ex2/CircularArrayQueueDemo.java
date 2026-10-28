@@ -1,6 +1,7 @@
 package Ficha4.src.part1.ex2;
 
 import exceptions.EmptyCollectionException;
+import queue.CircularArrayQueue;
 
 public class CircularArrayQueueDemo {
     public static void main(String[] args) throws EmptyCollectionException {

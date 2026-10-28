@@ -1,7 +1,7 @@
 package Ficha4.src.part1.ex5;
 
 import exceptions.EmptyCollectionException;
-import Ficha4.src.part1.ex1.LinkedQueue;
+import queue.LinkedQueue;
 
 public class CifraDeCesarLinkedQueue {
 

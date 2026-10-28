@@ -1,7 +1,7 @@
 package Ficha5.src.part1.ex5;
 
 import nodes.DoubleLinearNode;
-import Ficha5.src.DoubleLinkedList;
+import lists.DoubleLinkedList;
 import ADTs.UnorderedListADT;
 
 import java.util.NoSuchElementException;

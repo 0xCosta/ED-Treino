@@ -8,17 +8,17 @@ package nodes;
 public class LinearNode<T> {
 
     /**
-     * Referência para o próximo node na lista.
+     * Referência para o próximo nó na estrutura ligada.
      */
     private LinearNode<T> next;
 
     /**
-     * Elemento armazenado neste node.
+     * Elemento armazenado neste nó.
      */
     private T element;
 
     /**
-     * Cria um node vazio.
+     * Cria um nó vazio com referências a null.
      */
     public LinearNode() {
         this.next = null;
@@ -26,9 +26,9 @@ public class LinearNode<T> {
     }
 
     /**
-     * Cria um node que armazena o elemento especificado.
+     * Cria um nó que armazena o elemento especificado.
      *
-     * @param element elemento a ser armazenado
+     * @param element o elemento a ser armazenado
      */
     public LinearNode(T element) {
         this.element = element;
@@ -36,39 +36,48 @@ public class LinearNode<T> {
     }
 
     /**
-     * Retorna o node que se segue a este.
+     * Devolve o nó que se segue a este.
      *
-     * @return referência para o próximo node
+     * @return a referência para o próximo nó
      */
     public LinearNode<T> getNext() {
         return this.next;
     }
 
     /**
-     * Define o node que se segue a este.
+     * Define o nó que se segue a este.
      *
-     * @param node node que se segue a este
+     * @param node o próximo nó
      */
     public void setNext(LinearNode<T> node) {
         this.next = node;
     }
 
     /**
-     * Retorna o elemento armazenado neste node.
+     * Devolve o elemento armazenado neste nó.
      *
-     * @return elemento armazenado neste node
+     * @return o elemento armazenado neste nó
      */
     public T getElement() {
         return this.element;
     }
 
     /**
-     * Define o elemento armazenado neste node.
+     * Define o elemento armazenado neste nó.
      *
-     * @param element elemento a ser armazenado neste node
+     * @param element o elemento a ser armazenado neste nó
      */
     public void setElement(T element) {
         this.element = element;
     }
-}
 
+    /**
+     * Devolve a representação textual do elemento contido no nó.
+     *
+     * @return a representação em String do elemento
+     */
+    @Override
+    public String toString() {
+        return (this.element == null) ? "null" : this.element.toString();
+    }
+}

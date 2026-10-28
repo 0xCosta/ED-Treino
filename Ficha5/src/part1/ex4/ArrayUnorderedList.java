@@ -1,6 +1,6 @@
 package Ficha5.src.part1.ex4;
 
-import Ficha5.src.ArrayList;
+import lists.ArrayList;
 import ADTs.UnorderedListADT;
 
 import java.util.NoSuchElementException;

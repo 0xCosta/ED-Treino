@@ -1,6 +1,7 @@
 package Ficha4.src.part1.ex1;
 
 import exceptions.EmptyCollectionException;
+import queue.LinkedQueue;
 
 public class LinkedQueueDemo {
     public static void main(String[] args) throws EmptyCollectionException {

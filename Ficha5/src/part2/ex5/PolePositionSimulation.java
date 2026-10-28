@@ -1,8 +1,8 @@
 package Ficha5.src.part2.ex5;
 
 import exceptions.EmptyCollectionException;
-import Ficha5.src.part1.ex1.ArrayOrderedList;
-import Ficha5.src.part1.ex2.DoubleLinkedOrderedList;
+import lists.ArrayOrderedList;
+import lists.DoubleLinkedOrderedList;
 
 /**
  * Simulação da qualificação para a Pole Position de Fórmula 1

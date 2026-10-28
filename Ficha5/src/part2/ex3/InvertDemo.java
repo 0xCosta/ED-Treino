@@ -1,7 +1,7 @@
 package Ficha5.src.part2.ex3;
 
 import ADTs.UnorderedListADT;
-import Ficha5.src.part1.ex2.DoubleLinkedOrderedList;
+import lists.DoubleLinkedOrderedList;
 
 /**
  * Demonstração do Exercício 3 da Parte II:

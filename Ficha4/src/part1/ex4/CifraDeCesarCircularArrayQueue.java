@@ -1,7 +1,7 @@
 package Ficha4.src.part1.ex4;
 
 import exceptions.EmptyCollectionException;
-import Ficha4.src.part1.ex2.CircularArrayQueue;
+import queue.CircularArrayQueue;
 
 public class CifraDeCesarCircularArrayQueue {
 
